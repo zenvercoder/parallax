@@ -1,18 +1,17 @@
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
+  console.log("wScroll= ", wScroll);
 
-  $('.logo').css({
-    'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-  });
+  if(wScroll > 375) {
+    $('nav').css({
+      'margin-top':'40px',
+      'transition': '1s ease-in-out',
+      'z-index': '3',
+      'transform': 'translateZ(200px)'
+    });
+  }
 
-  $('.back-bird').css({
-    'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-  });
-
-  $('.fore-bird').css({
-    'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-  });
 
   if(wScroll > $('.picasa').offset().top - ($(window).height() / 1.2)) {
 
@@ -27,13 +26,16 @@ $(window).scroll(function(){
 
   if(wScroll > $('.large-window').offset().top - $(window).height()){
 
-    $('.large-window').css({'background-position':'center '+ (wScroll - $('.large-window').offset().top) +'px'});
+    $('.large-window').css({'background-position':'center '+ (wScroll /1.5 - $('.large-window').offset().top) +'px'});
 
-    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 50);
+    var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
 
     $('.window-tint').css({'opacity': opacity});
 
   }
+
+
+
 
   if(wScroll > $('.blog-posts').offset().top - $(window).height()){
 
@@ -61,3 +63,19 @@ $(document).ready(function(){
     $(".title").css({"background-position": traX + "%" + traY + "%"});
   });
 });
+
+// $('.title').css({
+//   'transform' : 'translate(0px, '+ wScroll /40 +'%)'
+// });
+//
+// $('.subtitle').css({
+//   'transform' : 'translate(0px, '+ wScroll /40 +'%)'
+// });
+
+// $('.back-bird').css({
+//   'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+// });
+//
+// $('.fore-bird').css({
+//   'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
+// });

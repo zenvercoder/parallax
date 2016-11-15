@@ -34,7 +34,7 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
+/*hgroup,*/
 main,
 menu,
 nav,
@@ -596,7 +596,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #ccc; }
 
 a:hover {
   color: #0FA0CE; }
@@ -863,6 +863,10 @@ h1 {
   color: #ccc;
   weight: 300; }
 
+a:hover {
+  color: cyan;
+}
+
 figure {
   margin: auto; }
 
@@ -870,12 +874,14 @@ figure {
   position: relative;
   z-index: 2;
   background: white;
-  margin-bottom: 400px; }
+  margin-bottom: 400px;
+}
 .content article {
   padding: 100px 0;
   max-width: 640px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+}
 
 img {
   max-width: 100%; }
@@ -887,13 +893,11 @@ img {
   top:50%;
 }
 
+
 .star-box {
   position: relative;
   height: 600px;
-  /*width: 100%;*/
-  /*background-image: url(../images/waveGraduatedTint.jpg);*/
   background-size: auto 875px;
-  /*background-size: cover;*/
   background: white;
   background-position: top center;
   background-attachment: fixed;
@@ -912,6 +916,7 @@ img {
   letter-spacing: -8px;
   height: 100px;
   width: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
@@ -965,7 +970,7 @@ img {
   /*margin-left: -480px; }*/
 
 .picasa {
-  margin-bottom: 100px; }
+  margin-bottom: 0px; }
   .picasa figure {
     margin-bottom: 20px;
     position: relative;
@@ -996,9 +1001,10 @@ img {
     transition: all 0.3s ease-in-out; }
 
 .large-window {
-  height: 625px;
+  height: 665px;
+  width: 680px;
   background-image: url(../images/infantStars.jpg);
-  background-size: cover;
+  background-size: 190%;
   background-position: center 0px;
   /*background-repeat: repeat-y;*/
   background-attachment: fixed;
@@ -1007,7 +1013,8 @@ img {
   border-radius: 50%;
   position: relative; }
   .large-window .window-tint {
-    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -1017,7 +1024,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; }
+    opacity: 0;
+  }
   /*.large-window .promo-text {*/
     /*color: white;*/
     /*font-weight: 100;*/
@@ -1056,8 +1064,34 @@ img {
   .blog-posts .post-3 {
     transform: translate(-100px, 20px); }
 
+nav {
+  /*background: #555555;*/
+  color: #555555;
+  /*padding: 40px 0;*/
+  border: 1px solid red;
+  position: fixed;
+  margin-top: -40px;
+  margin-bottom: -80px;
+  /*margin-left: 0;*/
+  top: 0;
+  width: 100%
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-stuff {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 footer {
   background: #ccc;
+  /*background: url(../images/infantStars.jpg) repeat;*/
   color: white;
   padding: 40px 0;
   position: fixed;
@@ -1071,7 +1105,11 @@ footer ul {
 }
 footer a {
   text-decoration: none;
-  color: white; }
+  color: white;
+}
+footer a:hover {
+  color: cyan;
+}
 footer input {
   color: #ccc;
 }
