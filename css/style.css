@@ -905,6 +905,8 @@ img {
   z-index: 1;
 }
 
+
+
 .title{
   font-weight: 800;
   color: transparent;
@@ -936,38 +938,6 @@ img {
   text-transform: uppercase;
   padding-top:10px;
 }
-
-
-/*.logo {*/
-  /*height: 100px;*/
-  /*width: 100%;*/
-  /*!*background-image: url(../images/black-bird-logo.svg);*!*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*position: absolute;*/
-  /*top: 50%;*/
-  /*margin-top: -50px; }*/
-
-/*.fore-bird {*/
-  /*width: 960px;*/
-  /*height: 733px;*/
-  /*!*background-image: url(../images/fore-bird.png);*!*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: right bottom;*/
-  /*position: absolute;*/
-  /*left: 50%;*/
-  /*margin-left: -480px;*/
-  /*top: 380px; }*/
-
-/*.back-bird {*/
-  /*width: 960px;*/
-  /*height: 298px;*/
-  /*!*background-image: url(../images/back-bird.png);*!*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: top left;*/
-  /*position: absolute;*/
-  /*left: 50%;*/
-  /*margin-left: -480px; }*/
 
 .picasa {
   margin-bottom: 0px; }
@@ -1026,72 +996,9 @@ img {
     align-items: center;
     opacity: 0;
   }
-  /*.large-window .promo-text {*/
-    /*color: white;*/
-    /*font-weight: 100;*/
-    /*font-size: 50px;*/
-    /*line-height: 1.2; }*/
-    /*.large-window .promo-text strong {*/
-      /*display: block;*/
-      /*font-size: 30px; }*/
-    /*.large-window .promo-text span {*/
-      /*font-weight: 300;*/
-      /*font-size: 18px;*/
-      /*font-style: italic;*/
-      /*color: rgba(255, 255, 255, 0.6); }*/
-    /*.large-window .promo-text .window-cta {*/
-      /*font-size: 20px;*/
-      /*text-decoration: none;*/
-      /*color: white;*/
-      /*border: 1px solid white;*/
-      /*padding: 10px 20px;*/
-      /*transition: all 0.3s ease-in-out; }*/
-      /*.large-window .promo-text .window-cta:hover {*/
-        /*background: white;*/
-        /*color: black; }*/
-
-.blog-posts {
-  margin-top: 100px; }
-  .blog-posts .post {
-    border: 1px solid #e1e1e1;
-    padding: 20px 20px 0;
-    background: white;
-    position: relative; }
-  .blog-posts .post-1 {
-    transform: translate(100px, 20px); }
-  .blog-posts .post-2 {
-    z-index: 2; }
-  .blog-posts .post-3 {
-    transform: translate(-100px, 20px); }
-
-nav {
-  /*background: #555555;*/
-  color: #555555;
-  /*padding: 40px 0;*/
-  border: 1px solid red;
-  position: fixed;
-  margin-top: -40px;
-  margin-bottom: -80px;
-  /*margin-left: 0;*/
-  top: 0;
-  width: 100%
-}
-nav ul {
-  list-style-type: none;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-.nav-stuff {
-  max-width: 640px;
-  margin: 0 auto;
-}
 
 footer {
   background: #ccc;
-  /*background: url(../images/infantStars.jpg) repeat;*/
   color: white;
   padding: 40px 0;
   position: fixed;
@@ -1099,7 +1006,9 @@ footer {
   width: 100%; }
 footer .footer-stuff {
   max-width: 640px;
-  margin: 0 auto; }
+  margin-left: 100px;
+  /*margin: 0 auto; */
+}
 footer ul {
   list-style-type: none;
 }

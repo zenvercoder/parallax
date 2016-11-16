@@ -3,16 +3,6 @@ $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
   console.log("wScroll= ", wScroll);
 
-  if(wScroll > 375) {
-    $('nav').css({
-      'margin-top':'40px',
-      'transition': '1s ease-in-out',
-      'z-index': '3',
-      'transform': 'translateZ(200px)'
-    });
-  }
-
-
   if(wScroll > $('.picasa').offset().top - ($(window).height() / 1.2)) {
 
     $('.picasa figure').each(function(i){
@@ -33,9 +23,6 @@ $(window).scroll(function(){
     $('.window-tint').css({'opacity': opacity});
 
   }
-
-
-
 
   if(wScroll > $('.blog-posts').offset().top - $(window).height()){
 
@@ -64,18 +51,3 @@ $(document).ready(function(){
   });
 });
 
-// $('.title').css({
-//   'transform' : 'translate(0px, '+ wScroll /40 +'%)'
-// });
-//
-// $('.subtitle').css({
-//   'transform' : 'translate(0px, '+ wScroll /40 +'%)'
-// });
-
-// $('.back-bird').css({
-//   'transform' : 'translate(0px, '+ wScroll /4 +'%)'
-// });
-//
-// $('.fore-bird').css({
-//   'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-// });
